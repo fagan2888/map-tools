@@ -59,7 +59,7 @@
              pos = pos_default
              gps = [],
              label = document.getElementById('label'),
-             zoom_default = 1;
+             zoom_default = 6;
 
          var map = new google.maps.Map(document.getElementById('map'), {
              zoom: zoom_default,
@@ -72,6 +72,8 @@
              position: pos,
              map: map
          });
+         marker.setMap(null);
+         var marker_switch = false;
 
          // Try HTML5 geolocation
          if (navigator.geolocation) {
@@ -106,6 +108,7 @@
              c1.colSpan = 2;
              c1.textContent = "No points added.";
              tbl_switch = true;
+             marker.setMap(null);
          }
          instructions(tbl)
 
@@ -117,6 +120,7 @@
 
              if (tbl_switch) {
                  tbl.deleteRow(1);
+                 marker.setMap(map);
                  tbl_switch = false;
              }
 
@@ -155,7 +159,6 @@
                      tbl.deleteRow(-1);
                  }
                  setLocation(map, marker, pos_default);
-                 map.setZoom(zoom_default);
                  instructions(tbl);
              }
          });
