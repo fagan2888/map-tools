@@ -6,10 +6,10 @@ function initMap() {
 
     // Default location
     var pos_default = {lat: 40.704107, lng: -74.014772},
-        pos = pos_default
-    gps = [],
-    label = document.getElementById('label'),
-    zoom_default = 6;
+        pos = pos_default,
+        gps = [],
+        label = document.getElementById('label'),
+        zoom_default = 6;
 
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: zoom_default,
@@ -59,7 +59,7 @@ function initMap() {
     var tbl = document.getElementById('tbl'),
         tbl_switch = true;
     // Initialize coordinate table
-    instructions = function(tbl) {
+    function instructions(tbl) {
         var row = tbl.insertRow(-1),
             c1 = row.insertCell(0),
             c2 = row.insertCell(1);
