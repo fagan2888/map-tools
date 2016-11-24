@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>GPS view</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script src="gps-view.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbKrdFQsdCPXpASx8gGVllEPhHq7pZy7s&callback=init">
+    </script>
+
+    <div id="panel">
+      <input type="file" id="file" name="file" accept=".csv">
+    </div>
+
+  </body>
+</html>
+
