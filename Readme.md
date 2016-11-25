@@ -6,5 +6,8 @@ points as a CSV (with some help from
 [people's](https://developers.google.com/maps/documentation/javascript/geolocation)
 [code](http://stackoverflow.com/questions/6037712/how-to-float-a-div-over-google-maps)).
 
-Note that this brazenly expects HTML5.
+[`gps-view.html`](http://mhlinder.com/map-tools/gps-view.html)
+displays a path based on a CSV containing the header `lat,lng`.
+
+Note that this brazenly expects HTML5 is installed.
 
