@@ -56,7 +56,7 @@ function initMap() {
     };
 
     // Update marker, array of GPS coords, summary table for double click
-    var tbl = document.getElementById('tbl'),
+    var tbl = document.getElementById('tbl_pick'),
         tbl_switch = true;
     // Initialize coordinate table
     function instructions(tbl) {

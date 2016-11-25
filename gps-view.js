@@ -48,6 +48,7 @@ function init() {
         if (path.length > 0) {
             polyline.setMap(null);
             path = [];
+            document.getElementById('file').value = null;
         }
     });
 }
